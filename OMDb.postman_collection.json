@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "efb389db-124b-45f8-9f5c-963861512e01",
+		"name": "OMDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25398081"
+	},
+	"item": [
+		{
+			"name": "/movie by Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=6e6d5fd6&t=The Godfather ",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "6e6d5fd6"
+						},
+						{
+							"key": "t",
+							"value": "The Godfather "
+						},
+						{
+							"key": "type",
+							"value": "movie",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movie by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=6e6d5fd6&i=tt0468569",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "6e6d5fd6"
+						},
+						{
+							"key": "i",
+							"value": "tt0468569",
+							"description": "The Dark Night movie"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movie by Title with filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=6e6d5fd6&t=Breaking Bad&type=series&y=2008",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "6e6d5fd6"
+						},
+						{
+							"key": "t",
+							"value": "Breaking Bad",
+							"description": "Breaking Bad series"
+						},
+						{
+							"key": "type",
+							"value": "series"
+						},
+						{
+							"key": "y",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
